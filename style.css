@@ -1,0 +1,460 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header Styles */
+.church-header {
+    background-color: white;
+    text-align: center;
+    padding: 32px 24px;
+    border-bottom: 4px solid #175351;
+}
+
+.current-date {
+    font-size: 18px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 16px;
+}
+
+.welcome-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #175351;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+}
+
+.church-icon-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.church-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 12px;
+    color: #0d9488;
+}
+
+.divider {
+    width: 64px;
+    height: 1px;
+    background-color: #175351;
+}
+
+.divider.left {
+    margin-right: 12px;
+}
+
+.divider.right {
+    margin-left: 12px;
+}
+
+.welcome-text {
+    max-width: 512px;
+    margin: 0 auto;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.today-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #175351;
+    margin-bottom: 8px;
+}
+
+/* Sabbath Program Styles */
+.sabbath-program {
+    background-color: white;
+    padding: 32px 24px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.program-card {
+    border: 2px solid #175351;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.program-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.icon-section {
+    display: flex;
+    align-items: center;
+}
+
+.icon-section .divider {
+    width: 32px;
+    height: 1px;
+    background-color: #175351;
+}
+
+.church-icon-small {
+    width: 24px;
+    height: 24px;
+    margin: 0 12px;
+    color: #9ca3af;
+}
+
+.time {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.program-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #175351;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.program-content {
+    background-color: #f9fafb;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.content-title {
+    font-weight: 600;
+    color: #175351;
+    text-decoration: underline;
+    margin-bottom: 16px;
+}
+
+.topic {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.lesson-title {
+    font-size: 14px;
+    font-style: italic;
+    color: #175351;
+    margin-bottom: 8px;
+}
+
+.lesson-subtitle {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.program-items {
+    font-size: 14px;
+}
+
+.program-items p {
+    margin-bottom: 8px;
+}
+
+.centered {
+    text-align: center;
+    font-weight: 600;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.indented {
+    margin-left: 16px;
+}
+
+/* Announcements Styles */
+.announcements {
+    background-color: white;
+    padding: 32px 24px;
+    border-top: 4px solid #175351;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.section-divider {
+    width: 32px;
+    height: 1px;
+    background-color: #175351;
+    margin-right: 12px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #175351;
+}
+
+.section-title.small {
+    font-size: 20px;
+}
+
+.announcements-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.announcements-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.announcement h3 {
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.announcement h3.teal {
+    color: #175351;
+}
+
+.announcement p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.thought-section {
+    margin-top: 32px;
+    background-color: #f9fafb;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.thought-section h3 {
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.thought-section p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Upcoming Events Styles */
+.upcoming-events {
+    background-color: white;
+    padding: 32px 24px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.events-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.event {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.event h3 {
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.event p {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 4px;
+}
+
+.teal-text {
+    font-weight: 600;
+    color: #175351;
+}
+
+.additional-section {
+    margin-bottom: 24px;
+}
+
+.additional-section p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.website {
+    font-weight: 500;
+}
+
+/* Footer Styles */
+.church-footer {
+    background-color: white;
+    padding: 32px 24px;
+    border-top: 4px solid #175351;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-card {
+    border: 2px solid #175351;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.footer-header {
+    margin-bottom: 16px;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #175351;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.services-section {
+    margin-bottom: 24px;
+}
+
+.services-section h3 {
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.service-times {
+    font-size: 14px;
+}
+
+.service-time {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.church-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.church-info h3,
+.beliefs h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #175351;
+    margin-bottom: 16px;
+}
+
+.church-info p,
+.beliefs p {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.pastor-info {
+    margin-top: 16px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.blessing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .program-grid,
+    .announcements-grid,
+    .events-grid,
+    .footer-grid,
+    .church-info-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .welcome-title {
+        font-size: 36px;
+    }
+    
+    .container {
+        padding: 0 16px;
+    }
+    
+    .church-header,
+    .sabbath-program,
+    .announcements,
+    .upcoming-events,
+    .church-footer {
+        padding: 24px 16px;
+    }
+}
